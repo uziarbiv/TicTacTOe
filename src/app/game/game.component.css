@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Permanent+Marker');
+
+.row{
+    clear: both;
+}
+.reset{
+    width: 100px;
+    height: 29px;
+    text-align: center;
+    background: gray;
+    color: white;
+    cursor: pointer;
+}
+#myboard{
+    margin: 0 auto;
+    width: 381px;
+}
+label ,.winner ,.turn{
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+}
+input{    
+    width: 110px;
+    height: 30px;
+    text-align: center;
+}

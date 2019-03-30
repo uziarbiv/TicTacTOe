@@ -1,0 +1,14 @@
+:host{
+width:75px;
+height:75x;
+border:1px solid gray;
+float:left;
+font-size: 36px;
+text-align: center;
+padding: 25px;
+}
+
+img {
+    width: 45px;
+    height: 45px;
+}

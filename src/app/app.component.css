@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Permanent+Marker');
+
+.Wrapper{
+    margin:0 auto;
+}
+.boardGame{
+    width: 100%;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+h1{
+    font-family: 'Permanent Marker', cursive;
+}

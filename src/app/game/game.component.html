@@ -1,0 +1,17 @@
+    <form *ngIf="showInputs" #f="ngForm" (ngSubmit)="getName(Firstplayer,SecondPlayer)" >
+      <label>X player Name: </label><input type="text" name="firstPlayer" (focus)="firstPlayer.value=' '" placeholder=""autocomplete="off" #firstPlayer="ngModel" [(ngModel)]="Firstplayer" id="inputName" ><br/><br/>
+
+      <label>O player Name: </label><input type="text" name="secondPlayer" (focus)="secondPlayer.value=' '" placeholder="" autocomplete="off" #secondPlayer="ngModel" [(ngModel)]="SecondPlayer" id="inputName2" ><br/><br/>
+      <input type="submit" value="Let's Play">
+    </form>
+    <div *ngIf="showTable" id="myboard">
+      <div class="row" *ngFor="let r of row">
+          <app-square *ngFor="let c of col" [status]="squares[(r*3)+c]" (click)="PlayerClick((r*3)+c)" ></app-square>
+        </div>
+    
+    <div class="row">
+    <div *ngIf="Iswinner" class="winner">{{winner}}</div>
+    <div *ngIf="NextTurn" class="turn">{{turn}}</div>
+    </div>
+    <button class="reset" (click)="ResetGame()">New Game</button>
+  </div>
